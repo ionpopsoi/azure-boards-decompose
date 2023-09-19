@@ -1,0 +1,70 @@
+{
+    "manifestVersion": 1,
+    "version": "1.1.10",
+    "name": "Decompose",
+    "scopes": [
+        "vso.work",
+        "vso.work_write"
+    ],
+    "description": "Quickly decompose work item into sub-hierarchies",
+    "publisher": "ionPopsoi",
+    "id": "decompose",
+    "icons": {
+        "default": "marketplace/logo.png"
+    },
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],
+    "demands": [
+        "api-version/3.0"
+    ],
+    "tags": [
+        "Work Items",
+        "Decompose"
+    ],
+    "content": {
+        "details": {
+            "path": "marketplace/details.md"
+        }
+    },
+    "repository": {
+        "type": "git",
+        "uri": "https://github.com/ionpopsoi/azure-boards-decompose"
+    },
+    "links": {
+        "support": {
+            "uri": "mailto:ionmanager@gmail.com"
+        }
+    },
+    "branding": {
+        "color": "rgb(220, 235, 252)",
+        "theme": "light"
+    },
+    "categories": [
+        "Azure Boards"
+    ],
+    "contributions": [
+        {
+            "id": "contextMenu",
+            "type": "ms.vss-web.action",
+            "targets": [
+                "ms.vss-work-web.work-item-context-menu"
+            ],
+            "properties": {
+                "group": "contributed",
+                "uri": "src/index.html",
+                "text": "Decompose work item"
+            }
+        },
+        {
+            "id": "addItemsDialog",
+            "type": "ms.vss-web.control",
+            "targets": [],
+            "properties": {
+                "uri": "src/dialog.html"
+            }
+        }
+    ]
+}

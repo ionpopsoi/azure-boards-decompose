@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "module": "amd",
+        "sourceMap": false,
+        "target": "es5",
+        "jsx": "react",
+        "moduleResolution": "node",
+        "rootDir": "src",
+        "allowSyntheticDefaultImports": true,
+        
+    },   
+    "include": [
+        "./src"
+    ],
+    "filesGlob": [
+        "src/**/*.ts",
+        "src/**/*.tsx"
+    ]    
+}
